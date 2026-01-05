@@ -9,64 +9,70 @@
 
 <body class="preload">
 
-<!-- NAV -->
-<header class="nav">
-  <div class="nav-inner">
-    <nav class="nav-left">
-      <a href="#services">Services</a>
-      <a href="#shop">Shop</a>
-      <a href="#about">About</a>
-    </nav>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-left">
+        <a href="#services">Services</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+      </nav>
 
-    <div class="brand">MADE BY HXVAC</div>
+      <div class="brand">MADE BY HXVAC</div>
 
-    <button class="btn-outline" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">
-      Contact
-    </button>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-
-  <!-- HERO GROUP -->
-  <div class="hero-group">
-
-    <!-- FLOATS -->
-    <img src="assets/float-01.png" class="sticker s1" alt="">
-    <img src="assets/float-02.png" class="sticker s2" alt="">
-    <img src="assets/float-03.png" class="sticker s3" alt="">
-    <img src="assets/float-04.png" class="sticker s4" alt="">
-
-    <!-- CENTER CARD -->
-    <div class="center-card">
-      <img src="assets/logo-main.png" class="center-logo" alt="Made By Hxvac">
+      <button class="btn-outline" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">
+        Contact
+      </button>
     </div>
+  </header>
 
-    <!-- BUTTONS (INSIDE GROUP, BELOW CARD) -->
-    <div class="hero-actions">
-      <a href="#services" class="pill-anim"><span>Services</span></a>
-      <a href="#shop" class="pill-anim"><span>Shop</span></a>
+  <!-- HERO -->
+  <section class="hero">
+
+    <!-- This is centered with transforms that should NEVER be overwritten -->
+    <div class="hero-group">
+
+      <!-- Animate THIS wrapper only (safe) -->
+      <div class="intro">
+
+        <!-- FLOATS (attached to card edges) -->
+        <img src="assets/float-01.png" class="sticker s1" alt="">
+        <img src="assets/float-02.png" class="sticker s2" alt="">
+        <img src="assets/float-03.png" class="sticker s3" alt="">
+        <img src="assets/float-04.png" class="sticker s4" alt="">
+
+        <!-- CARD -->
+        <div class="center-card">
+          <img src="assets/logo-main.png" class="center-logo" alt="Made By Hxvac">
+        </div>
+
+        <!-- BUTTONS under card -->
+        <div class="hero-actions">
+          <a href="#services" class="pill-anim"><span>Services</span></a>
+          <a href="#shop" class="pill-anim"><span>Shop</span></a>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-  </div>
+  <!-- BELOW HERO -->
+  <section class="below">
+    <div class="bottom-pills">
+      <button class="pill2" onclick="document.querySelector('#work').scrollIntoView({behavior:'smooth'})">Work Process</button>
+      <button class="pill2 primary" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Contact!</button>
+      <button class="pill2" onclick="document.querySelector('#tos').scrollIntoView({behavior:'smooth'})">Terms of Service</button>
+    </div>
+  </section>
 
-</section>
+  <!-- SIMPLE SECTIONS -->
+  <section id="services" class="section"><h2>Services</h2></section>
+  <section id="shop" class="section"><h2>Shop</h2></section>
+  <section id="about" class="section"><h2>About</h2></section>
+  <section id="work" class="section"><h2>Work Process</h2></section>
+  <section id="tos" class="section"><h2>Terms of Service</h2></section>
+  <section id="contact" class="section"><h2>Contact</h2></section>
 
-<!-- BELOW HERO -->
-<section class="below">
-  <div class="bottom-pills">
-    <button class="pill2">Work Process</button>
-    <button class="pill2 primary">Contact!</button>
-    <button class="pill2">Terms of Service</button>
-  </div>
-</section>
-
-<section id="services" class="section">Services section</section>
-<section id="shop" class="section">Shop section</section>
-<section id="about" class="section">About section</section>
-<section id="contact" class="section">Contact section</section>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
